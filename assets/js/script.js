@@ -55,12 +55,17 @@ function getCurrentWeatherData(lat, lon) {
         uvEl.setAttribute('class', 'list-group')
         uvEl.innerText = "UV Index: " + weatherData.current.uvi
         weatherInfoDiv.appendChild(uvEl)
+        })
+        .catch(function(err) {
+            console.log(err)
+        })
+    }
 
 
 
 
-})
-}
+
+
 
 
 
